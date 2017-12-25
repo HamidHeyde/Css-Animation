@@ -1,0 +1,211 @@
+body
+{
+  margin: auto;
+  background-color: smokewhite;
+  font-family: tahoma;
+}
+.TopMenuContainer
+{
+  margin: 100px auto auto auto;
+  width: 610px;
+}
+.TopMenuContainer > :first-child
+{
+  border-radius: 5px 0 0 5px;
+}
+.TopMenuContainer > :last-child
+{
+  border-radius: 0 5px 5px 0;
+}
+.TopMenuItem
+{
+  float: left;
+  width:150px;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  background: gray;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  height: 60px;
+}
+.TopMenuItem:hover, .Submenu:hover
+{
+  background-color: #7b0b0b;
+  cursor: pointer;
+}
+
+.SubMenuContainer
+{
+  display: none;
+  width: 100%;
+  float: left;
+  background-color: transparent;
+}
+
+.Submenu
+{
+  width: 100%;
+  background-color: gray;
+}
+
+.TopMenuContainer > :nth-child(n):hover > :nth-child(1)
+{
+  display: block;
+  perspective: 1000px;
+}
+
+/*MENU 1*/
+.TopMenuContainer > :nth-child(1) > :nth-child(1) > :nth-child(n)
+{
+  opacity: 0;
+
+  animation-name: menu1;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.TopMenuContainer > :nth-child(1) > :nth-child(1) > :nth-child(1)
+{animation-delay: 0ms;}
+
+.TopMenuContainer > :nth-child(1) > :nth-child(1) > :nth-child(2)
+{animation-delay: 150ms;}
+
+.TopMenuContainer > :nth-child(1) > :nth-child(1) > :nth-child(3)
+{animation-delay: 300ms;}
+
+.TopMenuContainer > :nth-child(1) > :nth-child(1) > :nth-child(4)
+{animation-delay: 450ms;}
+
+.TopMenuContainer > :nth-child(1) > :nth-child(1) > :nth-child(5)
+{animation-delay: 600ms;}
+@keyframes menu1{
+  0%
+  {
+    opacity: 0;
+    transform: rotateY(-90deg) translateY(30px);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: rotate(0deg) translateY(0px);
+  }
+  }
+
+/* MENU 2*/
+.TopMenuContainer > :nth-child(2) > :nth-child(1) > :nth-child(n)
+{
+  opacity: 0;
+  transform-origin: top;
+  animation-name: menu2;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.TopMenuContainer > :nth-child(2) > :nth-child(1) > :nth-child(1)
+{animation-delay: 0ms;}
+
+.TopMenuContainer > :nth-child(2) > :nth-child(1) > :nth-child(2)
+{animation-delay: 150ms;}
+
+.TopMenuContainer > :nth-child(2) > :nth-child(1) > :nth-child(3)
+{animation-delay: 300ms;}
+
+.TopMenuContainer > :nth-child(2) > :nth-child(1) > :nth-child(4)
+{animation-delay: 450ms;}
+
+.TopMenuContainer > :nth-child(2) > :nth-child(1) > :nth-child(5)
+{animation-delay: 600ms;}
+@keyframes menu2{
+  0%
+  {
+    opacity: 0;
+    transform: rotateX(-90deg) translateY(30px);
+  }
+  60% {
+    transform: rotateX(50deg);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: rotate(0deg) translateY(0px);
+  }
+  }
+
+  /* MENU 3*/
+  .TopMenuContainer > :nth-child(3) > :nth-child(1) > :nth-child(n)
+  {
+    opacity: 0;
+    transform-origin: center;
+    animation-name: menu3;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  .TopMenuContainer > :nth-child(3) > :nth-child(1) > :nth-child(1)
+  {animation-delay: 0ms;}
+
+  .TopMenuContainer > :nth-child(3) > :nth-child(1) > :nth-child(2)
+  {animation-delay: 150ms;}
+
+  .TopMenuContainer > :nth-child(3) > :nth-child(1) > :nth-child(3)
+  {animation-delay: 300ms;}
+
+  .TopMenuContainer > :nth-child(3) > :nth-child(1) > :nth-child(4)
+  {animation-delay: 450ms;}
+
+  .TopMenuContainer > :nth-child(3) > :nth-child(1) > :nth-child(5)
+  {animation-delay: 600ms;}
+  @keyframes menu3{
+    0%
+    {
+      opacity: 0;
+      transform: transform: scale(0.3) translateY(-60px);
+    }
+    60% {
+      transform: scale(1.2) translateY(10px);
+    }
+    100%
+    {
+      opacity: 1;
+      transform: scale(1) translateY(0px);
+    }
+    }
+
+    /* MENU 4*/
+    .TopMenuContainer > :nth-child(4) > :nth-child(1) > :nth-child(n)
+    {
+      opacity: 0;
+      transform-origin: top;
+      animation-name: menu4;
+      animation-duration: 300ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+    }
+    .TopMenuContainer > :nth-child(4) > :nth-child(1) > :nth-child(1)
+    {animation-delay: 0ms;}
+
+    .TopMenuContainer > :nth-child(4) > :nth-child(1) > :nth-child(2)
+    {animation-delay: 150ms;}
+
+    .TopMenuContainer > :nth-child(4) > :nth-child(1) > :nth-child(3)
+    {animation-delay: 300ms;}
+
+    .TopMenuContainer > :nth-child(4) > :nth-child(1) > :nth-child(4)
+    {animation-delay: 450ms;}
+
+    .TopMenuContainer > :nth-child(4) > :nth-child(1) > :nth-child(5)
+    {animation-delay: 600ms;}
+    @keyframes menu4{
+      0%
+      {
+        opacity: 0;
+        transform: rotate(-30deg) translateX(30px);
+      }
+      100%
+      {
+        opacity: 1;
+        transform: rotate(0deg) translateY(0px);
+      }
+      }
