@@ -23,4 +23,43 @@ body
   float: left;
   margin-left: 50px;
   border-radius: 50%;
+  position: relative;
+  box-sizing: border-box;
+}
+.spinner:after, .spinner:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.spinner1::after, .spinner1::before
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 3px solid transparent;
+
+  animation-name: spinner1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.spinner1::before
+{border-top: 3px solid orangered;}
+
+.spinner1::after
+{border-bottom: 3px solid orangered;}
+
+@keyframes spinner1 {
+  0% {
+        transform: rotate(0deg) scale(1);
+  }
+  50% {
+        transform: rotate(45deg) scale(1.2);
+  }
+  100% {
+        transform: rotate(360deg) scale(1);
+  }
 }
