@@ -4,3 +4,4 @@
 Keyframe Animation:
 
 1.Animated Menus
+2.Spinners, Loaders,..

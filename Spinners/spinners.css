@@ -1,0 +1,26 @@
+body
+{
+  margin: auto;
+  background: #eee;
+}
+.wrapper
+{
+  background: #fff;
+  margin: 50px auto auto auto;
+  width: 800px;
+  height: 275px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 70px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px 5px #ccc;
+}
+.spinner
+{
+  background: #eee;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-left: 50px;
+  border-radius: 50%;
+}
