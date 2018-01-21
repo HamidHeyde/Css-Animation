@@ -8,7 +8,7 @@ body
   background: #fff;
   margin: 50px auto auto auto;
   width: 800px;
-  height: 275px;
+  height: 400px;
   text-align: center;
   vertical-align: middle;
   padding: 70px;
@@ -129,4 +129,14 @@ body
     opacity: 0;
     transform: scale(1.3);
   }
+}
+.spinner4::after
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: orangered;
+  border-radius: 0;
+  width: 4px;
+  height: 66px;
 }
