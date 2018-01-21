@@ -199,12 +199,12 @@ body
 @keyframes jumpLoader {
   0%,100%
   {
-
+    background-color: orangered;
     transform: translateY(0px);
   }
   50%
   {
-    
+    background-color: #eee;
     transform: translateY(-30px);
   }
 }
