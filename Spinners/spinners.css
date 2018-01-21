@@ -164,3 +164,47 @@ body
     transform: rotate(360deg);
   }
 }
+.spinner5
+{
+  margin-top: 100px;
+  margin-left: 250px;
+  background: transparent;
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
+  height: 0px;
+}
+.spinner5::before, .spinner5::after
+{
+  width: 0px;
+  height: 0px;
+}
+.spinner5 > :nth-child(n)
+{
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+  float: left;
+  margin-left: 20px;
+  animation: jumpLoader 0.7s ease-in-out infinite;
+}
+.spinner5 > :nth-child(1)
+{animation-delay: 0s;}
+.spinner5 > :nth-child(2)
+{animation-delay: 0.5s;}
+.spinner5 > :nth-child(3)
+{animation-delay: 1s;}
+
+@keyframes jumpLoader {
+  0%,100%
+  {
+
+    transform: translateY(0px);
+  }
+  50%
+  {
+    
+    transform: translateY(-30px);
+  }
+}
